@@ -1,0 +1,13 @@
+name: Build Cache
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-rockcraft-cache:
+    name: Rockcraft Cache
+    uses: canonical/operator-workflows/.github/workflows/build_rockcraft_cache.yaml@feat-rockcraft-cache
+  
+  build-charmcraft-cache:
+    name: Charmcraft Cache
+    uses: canonical/operator-workflows/.github/workflows/build_charmcraft_cache.yaml@feat-rockcraft-cache
